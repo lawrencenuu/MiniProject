@@ -11,7 +11,7 @@ This is a web application for creating, reading, updating, and deleting notes. U
 5. Delete Note: Users can delete their notes if they no longer need them.
 
 ## Database Schema
-![Database Schema](https://drive.google.com/file/d/1JJZI0C5ncC1C0oIcMq2sBtHZb40JnsVR/view?usp=sharing)
+![Database Schema](https://i.imgur.com/6i3969O.png)
 
 
 ## Technologies Used
