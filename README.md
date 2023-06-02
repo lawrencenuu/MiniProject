@@ -10,6 +10,10 @@ This is a web application for creating, reading, updating, and deleting notes. U
 4. Update Note: Users can edit the title and content of their existing notes.
 5. Delete Note: Users can delete their notes if they no longer need them.
 
+## Database Schema
+![Database Schema]([https://example.com/images/example.png](https://drive.google.com/file/d/1JJZI0C5ncC1C0oIcMq2sBtHZb40JnsVR/view?usp=drive_link))
+
+
 ## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
