@@ -1,38 +1,37 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./noteapp.db"
+  provider = "mysql"
+  url      = "mysql://lab_19qujr:cuGeNMz4K2B2fOEe@server2.bsthun.com:6105/lab_blank01_193tvgm"
 }
 
-model User{
-  id Int @id @default(autoincrement())
-  username String @unique
-  email String @unique
-  password String
-  notes Note[]
-  comments Comment[]
+model User {
+  id        Int     @id @default(autoincrement())
+  username  String  @unique
+  email     String  @unique
+  password  String
+  notes     Note[]
+ 
 }
 
-model Note{
-  id Int @id @default(autoincrement())
-  title String
+model Note {
+  id          Int       @id @default(autoincrement())
+  title       String
   description String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  creatorId Int 
-  createdBy User @relation(fields: [creatorId],references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  creatorId   Int
+  createdBy   User      @relation(fields: [creatorId], references: [id])
+  
 }
 
-model Comment{
-  id Int @id @default(autoincrement())
-  text String
-  createdAt DateTime @default(now())
-  creatorId Int 
-  createdBy User @relation(fields: [creatorId],references: [id])
-}
+
+
+
+
+
+
+
+

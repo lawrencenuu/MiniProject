@@ -10,6 +10,7 @@ const NoteCard = ({ title = '', date = '', handleClick = () => {} }) => {
         backgroundColor: '#00FFFF',
         padding: '6px 18px',
         borderRadius: 5,
+        marginTop: 4,
         border: '1px solid rgba(255,255,255,0.6)',
         cursor: 'pointer',
         display: 'flex',
